@@ -14,6 +14,9 @@
 
 
 #include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
+#include <dt-bindings/input/qcom,qpnp-power-on.h>
+#include <dt-bindings/iio/qcom,spmi-vadc.h>
 #include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "perseus-p0-camera-sensor-mtp.dtsi"
