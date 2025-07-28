@@ -16,7 +16,7 @@
 #include "../../qcom-sdm845/sdm845-pmic-overlay.dtsi"
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "polaris-camera-sensor-mtp.dtsi"
-#include "xiaomi-sde-display.dtsi"
+#include "../xiaomi-sde-display.dtsi"
 #include "../xiaomi-common.dtsi"
 
 &qupv3_se10_i2c {
