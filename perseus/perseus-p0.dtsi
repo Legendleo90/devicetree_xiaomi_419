@@ -21,7 +21,7 @@
 #include "../../qcom-sdm845/sdm845-pinctrl-overlay.dtsi"
 #include "perseus-p0-camera-sensor-mtp.dtsi"
 #include "../xiaomi-sde-display.dtsi"
-#include "../xiaomi-common.dtsi"
+#include "./base_overlay/sdm845-pmic-overlay.dtsi"
 
 &qupv3_se10_i2c {
 #include "../../qcom-sdm845/smb1355.dtsi"

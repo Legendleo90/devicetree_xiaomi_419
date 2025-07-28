@@ -14,7 +14,7 @@
 
 #include "perseus-p0.dtsi"
 
-&qusb_phy0{
+&qusb_phy0 {
 	pinctrl-names = "atest_usb13_suspend","atest_usb13_active";
 		pinctrl-0 = <&atest_usb13_suspend>;
 		pinctrl-1 = <&atest_usb13_active>;
