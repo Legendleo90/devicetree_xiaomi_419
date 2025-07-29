@@ -58,10 +58,10 @@
 		qcom,mdss-dsi-panel-peak-brightness = <4200000>;
 		qcom,mdss-dsi-panel-blackness-level = <3230>;
 
-		qcom,esd-err-irq-gpio = <&tlmm 10 0x2001>; /* trig-flags: falling-0x0002 rasing-0x0001*/
+		mi,esd-err-irq-gpio = <&tlmm 10 0x2001>; /* trig-flags: falling-0x0002 rasing-0x0001*/
 
-		qcom,dispparam-enabled;
-		qcom,mdss-panel-on-dimming-delay = <120>;
+		mi,feature-enabled;
+		mi,mdss-panel-on-dimming-delay = <120>;
 
 		qcom,mdss-dsi-display-timings {
 			timing@0{
@@ -388,24 +388,24 @@
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
 				qcom,mdss-dsi-h-sync-pulse = <1>;
 
-				qcom,mdss-dsi-dispparam-cabcuion-command = [15 01 00 00 00 00 02 55 01];
-				qcom,mdss-dsi-dispparam-cabcuion-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-cabcstillon-command = [15 01 00 00 00 00 02 55 02];
-				qcom,mdss-dsi-dispparam-cabcstillon-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-cabcmovieon-command = [15 01 00 00 00 00 02 55 03];
-				qcom,mdss-dsi-dispparam-cabcmovieon-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-cabcoff-command = [39 01 00 00 01 00 02 55 00];
-				qcom,mdss-dsi-dispparam-cabcoff-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-dimmingon-command = [39 01 00 00 01 00 02 53 2C];
-				qcom,mdss-dsi-dispparam-dimmingon-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-skince-cabcuion-command = [15 01 00 00 00 00 02 55 81];
-				qcom,mdss-dsi-dispparam-skince-cabcuion-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-skince-cabcstillon-command = [15 01 00 00 00 00 02 55 82];
-				qcom,mdss-dsi-dispparam-skince-cabcstillon-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-skince-cabcmovieon-command = [15 01 00 00 00 00 02 55 83];
-				qcom,mdss-dsi-dispparam-skince-cabcmovieon-command-state = "dsi_hs_mode";
-				qcom,mdss-dsi-dispparam-skince-cabcoff-command = [15 01 00 00 00 00 02 55 80];
-				qcom,mdss-dsi-dispparam-skince-cabcoff-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-cabcuion-command = [15 01 00 00 00 00 02 55 01];
+				mi,mdss-dsi-cabcuion-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-cabcstillon-command = [15 01 00 00 00 00 02 55 02];
+				mi,mdss-dsi-cabcstillon-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-cabcmovieon-command = [15 01 00 00 00 00 02 55 03];
+				mi,mdss-dsi-cabcmovieon-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-cabcoff-command = [39 01 00 00 01 00 02 55 00];
+				mi,mdss-dsi-cabcoff-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-dimmingon-command = [39 01 00 00 01 00 02 53 2C];
+				mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-skince-cabcuion-command = [15 01 00 00 00 00 02 55 81];
+				mi,mdss-dsi-skince-cabcuion-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-skince-cabcstillon-command = [15 01 00 00 00 00 02 55 82];
+				mi,mdss-dsi-skince-cabcstillon-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-skince-cabcmovieon-command = [15 01 00 00 00 00 02 55 83];
+				mi,mdss-dsi-skince-cabcmovieon-command-state = "dsi_hs_mode";
+				mi,mdss-dsi-skince-cabcoff-command = [15 01 00 00 00 00 02 55 80];
+				mi,mdss-dsi-skince-cabcoff-command-state = "dsi_hs_mode";
 			};
 		};
 	};
