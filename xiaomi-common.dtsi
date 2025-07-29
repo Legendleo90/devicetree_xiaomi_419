@@ -153,6 +153,16 @@
 	qcom,max-current = <300>;
 	qcom,current-ma = <75>;
 };
+
+&thermal_zones {
+	pm8005_tz {
+		disable-thermal-zone;
+	};
+	pmi8998_tz {
+		disable-thermal-zone;
+	};
+};
+
 /* pmi8998.dtsi */
 
 /* pm8998.dtsi */
